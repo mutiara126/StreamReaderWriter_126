@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	string baris;
-	string nama file;
+	string NamaFile;
 
 	cout << "Masukan Nama File : ";
 	cin >> NamaFile;
@@ -45,11 +45,10 @@ int main() {
 			//dan tampilkan disini
 			cout << baris << '\n';
 		}
+		//tutup file tersebut setelah selesai
+		infile.close();
 	}
-
-
-
-
-
+	//jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "unable to open";
+	return 0;
 }
-

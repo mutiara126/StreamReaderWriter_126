@@ -1,5 +1,5 @@
+#include <fstream>
 #include <iostream>
-#include <iostrem>
 using namespace std;
 
 int main() {
@@ -7,6 +7,8 @@ int main() {
 
 	//membuak file dalam mode menulis.
 	ofstream outfile;
+	//menunjuk ke sebuah nama file
+	outfile.open("contohfile.txt");
 
 }
 
